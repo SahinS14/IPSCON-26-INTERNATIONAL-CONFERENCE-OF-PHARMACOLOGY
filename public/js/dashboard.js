@@ -179,7 +179,7 @@ function render() {
   const isUserPage = page === 'profile' || page === 'view-profile';
   if (portalHeader.parentNode) portalHeader.remove();
   $('#content').innerHTML = isUserPage ? html :
-    `<section class="welcome-banner"><div class="welcome-person"><span>Welcome back</span><strong>${safe(profile.title)} ${safe(profile.name)}</strong></div><div class="welcome-art" aria-hidden="true"></div><div class="banner-event"><strong>IPSCON ’26</strong><span>Kolkata · 27 Nov 2026</span></div><div class="event-countdown" aria-label="Countdown to 27 November 2026"><div class="countdown-units"><span><b data-count="days">00</b><small>Days</small></span><i>:</i><span><b data-count="hours">00</b><small>Hrs</small></span><i>:</i><span><b data-count="minutes">00</b><small>Min</small></span><i>:</i><span><b data-count="seconds">00</b><small>Sec</small></span></div></div><a class="top-profile" href="dashboard-view-profile.html" aria-label="Open user details">${icon('profile')}</a></section>` +
+    `<section class="welcome-banner"><div class="welcome-person"><span>Welcome back</span><strong>${safe(profile.title)} ${safe(profile.name)}</strong></div><div class="welcome-art" aria-hidden="true"></div><div class="banner-event"><strong>IPSCON ’26</strong><span>Kolkata · 26–28 Dec 2026</span></div><div class="event-countdown" aria-label="Countdown to 26 December 2026"><div class="countdown-units"><span><b data-count="days">00</b><small>Days</small></span><i>:</i><span><b data-count="hours">00</b><small>Hrs</small></span><i>:</i><span><b data-count="minutes">00</b><small>Min</small></span><i>:</i><span><b data-count="seconds">00</b><small>Sec</small></span></div></div><a class="top-profile" href="dashboard-view-profile.html" aria-label="Open user details">${icon('profile')}</a></section>` +
     html;
   if (isUserPage) $('#content').prepend(portalHeader);
   else $('.welcome-banner').insertAdjacentElement('afterend', portalHeader);
@@ -421,7 +421,7 @@ mobileMenu.addEventListener('change', syncDrawer);
 syncDrawer();
 
 function updateCountdown() {
-  const remaining = Math.max(0, new Date('2026-11-27T00:00:00+05:30').getTime() - Date.now());
+  const remaining = Math.max(0, new Date('2026-12-26T00:00:00+05:30').getTime() - Date.now());
   const seconds = Math.floor(remaining / 1000);
   const values = {
     days: Math.floor(seconds / 86400),
@@ -434,6 +434,6 @@ function updateCountdown() {
     if (el) el.textContent = String(value).padStart(2, '0');
   }
   const caption = document.querySelector('.countdown-caption');
-  if (caption) caption.textContent = remaining ? '27 NOV 2026' : '27 NOV 2026 · EVENT DAY';
+  if (caption) caption.textContent = remaining ? '26 DEC 2026' : '26 DEC 2026 · EVENT DAY';
 }
 setInterval(updateCountdown, 1000);
