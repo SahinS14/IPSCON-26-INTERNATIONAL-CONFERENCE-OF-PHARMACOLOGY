@@ -1,0 +1,51 @@
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.icon-down {
+  transform: rotate(90deg);
+}
+.icon-up {
+  transform: rotate(-90deg);
+}
+.icon-left {
+  transform: rotate(180deg);
+}
+.form-mark .icon {
+  width: 22px;
+  height: 22px;
+}
+.submit-button .icon {
+  width: 20px;
+  height: 20px;
+}
+.dialog-close .icon {
+  width: 19px;
+  height: 19px;
+}
+.back-link .icon,
+.switch-auth .icon,
+.auth-footer .icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+}
+.pass-symbol .icon {
+  width: 35px;
+  height: 35px;
+}

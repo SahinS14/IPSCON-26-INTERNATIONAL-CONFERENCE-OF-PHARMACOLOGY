@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f7f3eb" />
+    <title>Complete your registration | IPSCON ’26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/register.css" />
+    <script src="js/register.js" defer></script>
+    <link rel="stylesheet" href="css/whatsapp.css?v=1" />
+    <link rel="stylesheet" href="css/button-colors.css?v=1" />
+  </head>
+  <body>
+    <a class="skip" href="#registration-form">Skip to registration form</a>
+    <header>
+      <a href="index.html" aria-label="Indian Pharmacological Society home"
+        ><img
+          src="assets/ips-logo.png"
+          alt="Indian Pharmacological Society"
+          width="240"
+          height="65"
+      /></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Back to conference</a
+        ><a href="register.html" aria-current="page">Register</a><a href="login.html">Log in</a>
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <div class="intro-copy">
+          <p class="eyebrow">IPSCON ’26 <span>DELEGATE REGISTRATION</span></p>
+          <h1>Complete your registration<span>.</span></h1>
+          <p>Secure your spot for IPSCON ’26</p>
+        </div>
+        <div class="intro-event">
+          <strong>Kolkata</strong><span>INTERNATIONAL CONFERENCE<br />OF PHARMACOLOGY</span>
+        </div>
+      </div>
+      <div class="registration-layout">
+        <section class="form-card" aria-label="Delegate registration">
+          <form id="registration-form">
+            <fieldset>
+              <legend><span>01</span> Personal information</legend>
+              <div class="fields">
+                <div class="field full">
+                  <label for="full-name">Full name (as on certificate) <span>*</span></label
+                  ><input
+                    id="full-name"
+                    name="full_name"
+                    autocomplete="name"
+                    required
+                    maxlength="150"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                <div class="field">
+                  <label for="whatsapp">WhatsApp number <span>*</span></label
+                  ><input
+                    id="whatsapp"
+                    name="whatsapp"
+                    type="tel"
+                    autocomplete="tel"
+                    required
+                    pattern="[+0-9() .\-]{7,25}"
+                    maxlength="25"
+                    placeholder="+91 98765 43210"
+                  /><small>Include your country code.</small>
+                </div>
+                <div class="field">
+                  <label for="email">Email ID <span>*</span></label
+                  ><input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    maxlength="254"
+                    placeholder="you@institution.edu"
+                  />
+                </div>
+                <div class="field full">
+                  <label for="institution">Institution <span>*</span></label
+                  ><input
+                    id="institution"
+                    name="institution"
+                    autocomplete="organization"
+                    required
+                    maxlength="200"
+                    placeholder="Your college, hospital or organisation"
+                  />
+                </div>
+                <div class="field full">
+                  <label for="professional-number"
+                    >Professional registration number <span>*</span></label
+                  ><input
+                    id="professional-number"
+                    name="professional_registration_number"
+                    required
+                    maxlength="100"
+                    placeholder="Enter your registration number"
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><span>02</span> Payment information</legend>
+              <p class="section-note">
+                Use the bank transfer or UPI details in the payment panel, then attach your receipt.
+              </p>
+              <div id="mobile-payment-slot"></div>
+              <div class="fields">
+                <div class="field full">
+                  <label for="category">Choose category <span>*</span></label
+                  ><select id="category" name="category" required>
+                    <option value="">Select category</option>
+                    <option value="student" data-fee="3000">Student — ₹3,000</option>
+                    <option value="resident" data-fee="3600">Residents — ₹3,600</option>
+                    <option value="ips-member" data-fee="4500">IPS Member — ₹4,500</option>
+                    <option value="non-ips-member" data-fee="5000">Non IPS Member — ₹5,000</option>
+                    <option value="international" data-fee="8000">
+                      International Delegate — ₹8,000
+                    </option></select
+                  ><small>Early registration rates · till 31 October 2026.</small>
+                </div>
+
+                <div class="field full">
+                  <label for="receipt">Upload payment receipt <span>*</span></label>
+                  <div class="upload">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 16V3m-5 5 5-5 5 5M4 15v6h16v-6" />
+                    </svg>
+                    <div>
+                      <input
+                        id="receipt"
+                        name="payment_receipt"
+                        type="file"
+                        accept="image/jpeg,image/png,application/pdf"
+                        required
+                        aria-describedby="receipt-help"
+                      /><small id="receipt-help">JPG, PNG or PDF · maximum 10 MB</small>
+                    </div>
+                  </div>
+                  <p id="receipt-status" class="file-status" role="status"></p>
+                </div>
+                <div class="field full">
+                  <label for="amount">Amount paid (INR) <span>*</span></label>
+                  <div class="amount-input">
+                    <span aria-hidden="true">₹</span
+                    ><input
+                      id="amount"
+                      name="amount_paid"
+                      type="number"
+                      min="1"
+                      max="1000000"
+                      step="0.01"
+                      inputmode="decimal"
+                      required
+                      placeholder="0.00"
+                    />
+                  </div>
+                  <small>Enter the actual amount shown on your receipt.</small>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><span>03</span> Your participation</legend>
+              <fieldset class="presentation">
+                <legend>Oral / Poster Presentation? <span>*</span></legend>
+                <div class="radio-row">
+                  <label><input type="radio" name="presentation" value="yes" required /> Yes</label
+                  ><label><input type="radio" name="presentation" value="no" required /> No</label>
+                </div>
+                <p id="presentation-note">
+                  If yes, please email us:
+                  <a href="mailto:ipswbpvpi@gmail.com">ipswbpvpi@gmail.com</a>
+                </p>
+              </fieldset>
+              <div class="field">
+                <label for="message">Message <span class="optional">(optional)</span></label
+                ><textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  maxlength="2000"
+                  placeholder="Anything you would like us to know?"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <button class="submit-button" type="submit">Register</button>
+            <p id="form-status" role="status" tabindex="-1" hidden></p>
+          </form>
+        </section>
+        <aside class="payment-card" aria-labelledby="payment-heading">
+          <div class="payment-heading">
+            <span class="eyebrow">BANK TRANSFER / UPI</span>
+            <h2 id="payment-heading">Payment details.</h2>
+            <p>Techeal is our official end to end event partner.</p>
+          </div>
+          <dl>
+            <div>
+              <dt>Account name</dt>
+              <dd>TECHEAL</dd>
+            </div>
+            <div>
+              <dt>Bank</dt>
+              <dd>IDFC FIRST BANK</dd>
+            </div>
+            <div>
+              <dt>Account number</dt>
+              <dd>10161654047</dd>
+            </div>
+            <div>
+              <dt>IFSC</dt>
+              <dd>IDFB0060134</dd>
+            </div>
+            <div>
+              <dt>Branch</dt>
+              <dd>Kolkata – R N Mukherjee Road</dd>
+            </div>
+          </dl>
+          <div class="qr-section">
+            <h3>Scan &amp; pay</h3>
+            <p>Scan with any UPI app.</p>
+            <img
+              src="assets/registration-payment-qr.png"
+              alt="Paytm UPI payment QR code supplied for IPSCON registration"
+              width="275"
+              height="343"
+            /><a href="assets/registration-payment-qr.png" download="IPSCON-26-payment-QR.png"
+              >Download QR code</a
+            >
+          </div>
+          <div class="payment-help">
+            <p>Keep your payment receipt.<br />You’ll need it to complete the form.</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <span>© 2026 Indian Pharmacological Society · West Bengal</span
+      ><a href="mailto:helpdesk@ipswb.com">Need help? Contact us</a>
+    </footer>
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/918100881625"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp: +91 81008 81625"
+      title="WhatsApp: +91 81008 81625"
+      ><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+        <path
+          d="M20.5 3.5A11.9 11.9 0 0 0 12 0 12 12 0 0 0 1.6 18L0 24l6.2-1.6A12 12 0 0 0 12 24h.1A12 12 0 0 0 24 12a11.9 11.9 0 0 0-3.5-8.5ZM12.1 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.7 1 1-3.6-.3-.4A10 10 0 1 1 12.1 22Zm5.5-7.5c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6L9 6.9c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4l-.6-.3Z"
+        /></svg
+    ></a>
+  </body>
+</html>

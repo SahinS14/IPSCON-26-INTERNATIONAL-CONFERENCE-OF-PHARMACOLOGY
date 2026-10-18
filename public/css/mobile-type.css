@@ -1,0 +1,93 @@
+@media (max-width: 800px) {
+  body.conference-site main > .section h2 {
+    font-size: clamp(28px, 8vw, 34px);
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+  }
+  body.conference-site main > .section h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  body.conference-site main > .section p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  body.conference-site main > .section .eyebrow {
+    font-size: 9px;
+    line-height: 1.7;
+  }
+  body.conference-site #committee .team-intro h2 {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+  body.conference-site #committee .team-caption h3 {
+    font-size: 17px;
+  }
+  body.conference-site .impact-chapters h3 {
+    font-size: 25px;
+  }
+  body.conference-site .about-gallery-card h3 {
+    font-size: 27px;
+  }
+  body.conference-site .about-purpose-strip h3 {
+    font-size: 24px;
+  }
+  body.conference-site .member-story-panel h3 {
+    font-size: 25px;
+  }
+  body.conference-site .contact-form input,
+  body.conference-site .contact-form textarea,
+  body.conference-site .contact-form select {
+    font-size: 16px;
+  }
+}
+
+.mobile-stat-grid {
+  display: none;
+}
+@media (max-width: 760px) {
+  .mobile-stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 27px 0 18px;
+  }
+  .mobile-stat-grid > div {
+    min-height: 140px;
+    border: 1px solid #123e3b24;
+    background: #f7f3eb99;
+    border-radius: 12px;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  .mobile-stat-grid strong {
+    font:
+      500 46px/1 'Manrope',
+      Arial,
+      sans-serif;
+    letter-spacing: -0.055em;
+    color: #123e3b;
+    font-variant-numeric: tabular-nums;
+  }
+  .mobile-stat-grid > div:first-child {
+    background: #123e3b;
+    border-color: #123e3b;
+  }
+  .mobile-stat-grid > div:first-child strong {
+    color: #f2ca50;
+  }
+  .mobile-stat-grid > div:first-child span {
+    color: #fff;
+  }
+  .mobile-stat-grid span {
+    font:
+      400 12px/1.5 'Poppins',
+      Arial,
+      sans-serif;
+    color: #32574b;
+    max-width: 16ch;
+  }
+}

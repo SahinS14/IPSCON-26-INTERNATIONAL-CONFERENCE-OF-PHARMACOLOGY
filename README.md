@@ -1,28 +1,87 @@
-# IPS West Bengal redesign
+# IPSCON ’26 — International Conference of Pharmacology
 
-Static, dependency-free website. Serve `dist` with any static HTTP server (for example `python3 -m http.server 4173 --directory dist`). No build step. Deploy configuration is in `.openai/hosting.json`.
+A responsive conference website developed as a **freelance project for the Indian Pharmacological Society, West Bengal Chapter**. The site presents conference information, registration guidance, and delegate-facing interfaces for IPSCON ’26 in Kolkata.
 
-## Design and motion
+**Developer:** [Sahin Pradhan](https://github.com/SahinS14)  
+**Engagement:** Freelance web development  
+**Stack:** HTML5 · CSS3 · Vanilla JavaScript  
+**Delivery:** Static website with no framework, package installation, or build step
 
-Reference reviewed: https://ayurworld.org/ on 16 October 2026. The desktop hero uses Slider Revolution image layers: lateral entrances around 2.9 seconds, enlarged foreground layers entering from below with perspective rotations around 2.6 seconds, and slow linear lateral movement over 9 seconds. Divi and carousel components structure the sections below it. The initially narrow browser view did not show the hero artwork; desktop inspection did.
+## Project overview
 
-Adaptation: original ivory/forest-green pharmacology artwork, layered introductory reveal, ambient foreground particles, a sticky hero with scroll-driven image scale/translation and independently moving copy. A second pinned scene rotates a CSS molecular sculpture and switches through three content chapters. Scroll is native, without wheel interception. Transform/opacity updates are requestAnimationFrame-batched; sections reveal once with IntersectionObserver. The sculpture is decorative, not a chemically accurate model.
+The project brings the conference's information into one visual experience: event highlights, the organising team, registration categories, venue information, and ways to contact the organisers. Separate account and delegate pages extend that experience beyond the landing page.
 
-Reduced-motion mode removes pinning and parallax and presents all science chapters in normal flow. A pause control freezes decorative and scroll-driven motion; chapter buttons remain usable. Hover motion is limited to fine pointers. Mobile includes a keyboard-operable menu, visible focus states and smaller scenes.
+The design uses Kolkata-inspired imagery, typography, video, and motion to give the conference a distinct identity while keeping navigation and key information accessible across screen sizes.
 
-## Content and destinations
+## My contribution
 
-Content source: https://www.ipswb.com/ inspected 16 October 2026. Society description, 33 state conferences, 5 national conferences, four organising committee names/photos, membership benefits, contact information and registration rates are taken or paraphrased from that source. Promotional headings are original editorial copy.
+As the freelance developer, I implemented the website's frontend, including:
 
-The source contains placeholder services, departments, testimonials and FAQs; these were omitted. Its registration form repeats a December day and conflicts with the registration windows, so no definitive conference dates are advertised. Rates are explicitly labelled with their published 16 April–31 October 2026 window. Membership fees were placeholders and are not displayed. Registration and brochure links go to the existing official site. Contact links open the visitor's mail or phone app; this site does not collect information or process payments.
+- Responsive page layouts and reusable visual styles for the conference and delegate pages.
+- Interactive navigation, event countdowns, registration rate displays, and enquiry interactions.
+- Video-led hero sections, scroll-driven effects, reveal animations, and loading transitions.
+- Registration and account form interfaces with browser-side validation and feedback.
+- Delegate dashboard interfaces for instructions, abstracts, profile details, and password changes.
+- A readable HTML, CSS, and JavaScript codebase with separate folders for styles, scripts, and media.
+- Static deployment preparation and verification of local page, stylesheet, script, and image references.
 
-## Assets
+## Features
 
-- `dist/assets/ips-logo.png`: supplied user logo, preserved.
-- Committee portraits: sourced from IPSWB's doctors-1 through doctors-4 assets.
-- `dist/assets/molecular-hero.png`: generated with the built-in image generation tool. Prompt: “Premium medical research website hero, landscape 1536x1024. Exquisite editorial 3D scientific still life: satin forest-green and translucent frosted jade spheres connected by delicate brushed pale gold rods, suspended in air; one subtle translucent glass capsule; warm ivory #f6f4ed background; subject on right 60%, left 40% negative space; realistic studio lighting; no text, logos or watermark. Abstract pharmacology art, not a chemically accurate diagram.”
-- Fonts: Google Fonts DM Sans and Manrope; system fallbacks included.
+| Area | Implementation |
+| --- | --- |
+| Conference landing page | Event presentation, countdown, conference content, organising team, and contact information |
+| Responsive navigation | Mobile menu with keyboard dismissal and accessible expanded-state updates |
+| Visual storytelling | Kolkata imagery, hero video, scroll interactions, and animated section reveals |
+| Registration | Delegate categories, payment guidance, receipt type and size validation |
+| Account pages | Login, signup, password visibility controls, and field validation |
+| Delegate dashboard | Instructions, abstract interface, profile editing, and password interface |
+| Accessibility considerations | Semantic markup, labelled controls, form error feedback, and reduced-motion handling |
 
-## Verification
+## Technical approach
 
-JS syntax check; desktop 1440×900 and mobile 390×844 browser inspection; no horizontal overflow; all image assets loaded; navigation, chapter selection and delegate fee selection verified; no browser console errors. Reduced-motion CSS/JS reviewed. Real-device and assistive-technology testing remain advisable before replacing the production site.
+The site uses native browser capabilities rather than a frontend framework. CSS handles responsive layouts and presentation; JavaScript adds focused interactions through DOM events, `IntersectionObserver`, `requestAnimationFrame`, and media queries.
+
+Styles and scripts are separated by page or feature so the code can be reviewed and maintained without reading a single compressed file. Images and videos live in one assets directory, and existing page URLs remain simple HTML paths.
+
+This project demonstrates frontend implementation for a client brief, responsive interface development, browser API usage, and static hosting delivery.
+
+## Repository structure
+
+```text
+public/                         # Website document root
+├── index.html                  # Conference landing page
+├── register.html               # Registration page
+├── login.html                  # Login interface
+├── signup.html                 # Signup interface
+├── dashboard.html              # Delegate instructions
+├── dashboard-abstract.html     # Abstract interface
+├── dashboard-profile.html      # Profile interface
+├── dashboard-password.html     # Password interface
+├── css/                        # Main, page, and feature stylesheets
+├── js/                         # Page interactions and animation scripts
+└── assets/                     # Images, logos, and videos
+```
+
+## View locally
+
+Clone the repository and open `public/index.html` in a browser. For the most reliable video playback and account-page navigation, serve `public/` using any static web server, such as your editor's Live Server extension.
+
+No npm dependencies or compilation are required.
+
+## Deploy
+
+Set **`public/` as the hosting document root**, or upload everything inside it to your host's web directory. Keep the `css/`, `js/`, and `assets/` folders alongside `index.html`.
+
+- HTML loads styles from `css/`, scripts from `js/`, and media from `assets/`.
+- CSS loads media using `../assets/`, relative to the stylesheet location.
+- No build command is needed.
+
+## Implementation scope
+
+This repository contains the static frontend. Login currently opens a preview dashboard; dashboard information is stored in the browser. Signup and registration provide helpdesk guidance rather than creating server-side records.
+
+Production authentication, payment verification, receipt uploads, password changes, and abstract submission processing require backend integration. The interfaces in this repository should not be interpreted as completed backend services.
+
+## Credits
+
+Developed by [Sahin Pradhan](https://github.com/SahinS14) as a freelance project for the **Indian Pharmacological Society, West Bengal Chapter**. Conference branding and supplied media remain associated with their respective owners.

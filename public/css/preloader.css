@@ -1,0 +1,140 @@
+.conference-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  background: #f7f3eb;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.conference-preloader[hidden] {
+  display: none;
+}
+.kinetic-bridge {
+  position: relative;
+  width: 184px;
+  height: 110px;
+  perspective: 500px;
+}
+.bridge-segments {
+  position: absolute;
+  inset: 0 0 25px;
+  display: flex;
+  gap: 7px;
+  align-items: flex-end;
+  justify-content: center;
+}
+.bridge-segments i {
+  display: block;
+  width: 12px;
+  height: 28px;
+  background: #123e3b;
+  border-radius: 2px;
+  transform-origin: center bottom;
+  animation: bridgeAssemble 2400ms cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+.bridge-segments i:nth-child(2),
+.bridge-segments i:nth-child(8) {
+  height: 43px;
+  animation-delay: 80ms;
+  background: #24534e;
+}
+.bridge-segments i:nth-child(3),
+.bridge-segments i:nth-child(7) {
+  height: 59px;
+  animation-delay: 160ms;
+  background: #38685e;
+}
+.bridge-segments i:nth-child(4),
+.bridge-segments i:nth-child(6) {
+  height: 73px;
+  animation-delay: 240ms;
+  background: #24534e;
+}
+.bridge-segments i:nth-child(5) {
+  height: 82px;
+  background: #a3462e;
+  animation-delay: 320ms;
+}
+.bridge-water {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 13px;
+  height: 1px;
+  background: #123e3b25;
+  transform-origin: center;
+  animation: bridgeRiver 2400ms cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+.bridge-water::after {
+  content: '';
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 7px;
+  height: 1px;
+  background: #123e3b12;
+}
+.conference-preloader.is-complete {
+  opacity: 0;
+  pointer-events: none;
+}
+@keyframes bridgeAssemble {
+  0%,
+  100% {
+    transform: translateY(6px) scaleY(0.15) rotateY(70deg);
+    opacity: 0.25;
+  }
+  32%,
+  58% {
+    transform: translateY(0) scaleY(1) rotateY(0);
+    opacity: 1;
+  }
+  82% {
+    transform: translateY(-8px) scaleY(0.15) rotateY(-70deg);
+    opacity: 0.25;
+  }
+}
+@keyframes bridgeRiver {
+  0%,
+  100% {
+    transform: scaleX(0.65);
+    opacity: 0.35;
+  }
+  40%,
+  60% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bridge-segments i,
+  .bridge-water {
+    animation: none;
+  }
+  .conference-preloader {
+    transition: opacity 150ms ease;
+  }
+}
+
+.preloader-composition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.preloader-caption {
+  margin: 0;
+  text-align: center;
+  font:
+    400 18px/1.6 'DM Sans',
+    Arial,
+    sans-serif;
+  letter-spacing: -0.025em;
+  color: #123e3b;
+}
+.preloader-caption span {
+  color: #5c6d67;
+}

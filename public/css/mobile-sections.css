@@ -1,0 +1,532 @@
+@media (max-width: 760px) {
+  body.conference-site #achievements {
+    padding: 32px 6% 40px;
+  }
+  body.conference-site .impact-layout {
+    display: block;
+  }
+  body.conference-site .mobile-stat-grid {
+    display: none;
+  }
+  body.conference-site .impact-sticky {
+    position: sticky;
+    top: 80px;
+    z-index: 5;
+    background: #e4eadf;
+    padding: 18px 0 20px;
+    border-bottom: 1px solid #123e3b25;
+  }
+  body.conference-site .impact-sticky > .eyebrow {
+    margin-bottom: 8px;
+    font-size: 8px;
+  }
+  body.conference-site .impact-sticky h2 {
+    font-size: 23px;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 260px;
+  }
+  body.conference-site .impact-sticky h2 br {
+    display: none;
+  }
+  body.conference-site .impact-display {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 18px;
+    align-items: center;
+    margin-top: 16px;
+  }
+  body.conference-site .impact-display .impact-index {
+    grid-column: 1/-1;
+    font-size: 8px;
+    margin-bottom: 3px;
+  }
+  body.conference-site .impact-display > strong {
+    font:
+      500 62px/1 'Manrope',
+      Arial,
+      sans-serif;
+    letter-spacing: -0.06em;
+    margin: 0;
+    min-width: 105px;
+  }
+  body.conference-site .impact-display > span:last-of-type {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 17ch;
+  }
+  body.conference-site .impact-line {
+    grid-column: 1/-1;
+    width: 100%;
+    max-width: none;
+    margin-top: 15px;
+    overflow: hidden;
+  }
+  body.conference-site .impact-line i {
+    width: 25%;
+  }
+  body.conference-site .impact-chapters article {
+    min-height: 55svh;
+    padding: 40px 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body.conference-site .impact-chapters h3 {
+    font-size: 24px;
+    margin: 13px 0;
+  }
+  body.conference-site .impact-chapters p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  body.conference-site .impact-tags {
+    gap: 6px;
+  }
+  .impact-tags span {
+    font-size: 10px;
+  }
+  body.conference-site #events,
+  body.conference-site #kolkata,
+  body.conference-site #conference {
+    padding: 38px 6%;
+  }
+  body.conference-site :is(#events, #kolkata, #conference) .section-label {
+    font-size: 8px;
+    letter-spacing: 0.04em;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+  }
+  body.conference-site :is(#events, #kolkata, #conference) h2 {
+    font-size: 29px;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+  }
+  body.conference-site :is(#events, #kolkata, #conference) .eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  body.conference-site :is(#events, #kolkata, #conference) p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  body.conference-site #events .section-heading {
+    gap: 15px;
+    margin-bottom: 22px;
+  }
+  .event-feature {
+    border-radius: 12px;
+    grid-template-columns: 1fr;
+    margin-bottom: 28px;
+  }
+  .event-feature-art {
+    min-height: 205px;
+    padding: 20px;
+  }
+  .event-feature-art > span {
+    font-size: 7px;
+    line-height: 1.7;
+  }
+  .event-feature-art > strong {
+    font-size: 52px;
+    margin-top: 8px;
+  }
+  .event-feature-art img {
+    width: 105%;
+    left: 0;
+    bottom: -100px;
+  }
+  .event-feature-copy {
+    padding: 22px 20px;
+  }
+  .event-feature-copy .event-badge {
+    font-size: 8px;
+    padding: 5px 9px;
+  }
+  body.conference-site .event-feature-copy h3 {
+    font-size: 24px;
+    margin: 13px 0 10px;
+  }
+  .event-feature-copy .button {
+    margin-top: 18px;
+    font-size: 11px;
+    padding: 12px 16px;
+    min-height: 44px;
+  }
+  .event-explorer-top {
+    display: block;
+    margin-bottom: 17px;
+  }
+  .event-explorer-top > p {
+    margin: 6px 0;
+  }
+  .event-tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .event-tabs > button {
+    display: grid;
+    grid-template-columns: 55px minmax(0, 1fr);
+    column-gap: 15px;
+    row-gap: 5px;
+    padding: 14px 16px;
+    min-height: 88px;
+    border-radius: 9px;
+    align-items: center;
+  }
+  .event-tabs > button > span:first-child {
+    grid-column: 2;
+    font-size: 7px;
+    letter-spacing: 0.08em;
+  }
+  .event-tabs > button > strong {
+    grid-column: 1;
+    grid-row: 1/3;
+    font:
+      400 35px/1 'DM Serif Display',
+      Georgia,
+      serif;
+    margin: 0;
+    letter-spacing: -0.06em;
+  }
+  .event-tabs sup {
+    font-size: 12px;
+    margin-left: 1px;
+  }
+  .event-tabs strong span {
+    font-size: 16px;
+  }
+  .event-tabs > button > span:last-child {
+    grid-column: 2;
+    font-size: 12px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .event-tabs .icon {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+  .event-panel {
+    padding: 22px 18px;
+    margin-top: 15px;
+    gap: 20px;
+    border-radius: 10px;
+  }
+  body.conference-site .event-panel h3 {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+  .event-panel h4 {
+    font-size: 13px;
+  }
+  .event-agenda li {
+    font-size: 12px;
+    line-height: 1.6;
+    padding: 11px 0;
+  }
+  .city-intro {
+    display: block;
+  }
+  .city-intro h2 {
+    margin-bottom: 17px;
+  }
+  .city-intro > p:last-child {
+    max-width: 34ch;
+  }
+  body.conference-site #kolkata .city-panorama {
+    margin: 22px -7% 18px;
+    overflow: hidden;
+  }
+  .city-panorama img {
+    width: 130%;
+    max-width: none;
+    margin-left: -15%;
+    margin-bottom: 0;
+  }
+  .city-notes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .city-notes > div {
+    padding: 18px 0;
+    border-top: 1px solid #123e3b24;
+  }
+  body.conference-site .city-notes h3 {
+    font-size: 22px;
+    margin: 7px 0;
+  }
+  .city-notes > div > span {
+    font-size: 8px;
+  }
+  .conference-grid {
+    gap: 24px;
+  }
+  .conference-copy h2 {
+    margin-bottom: 16px;
+  }
+  .conference-copy .button {
+    font-size: 11px;
+    padding: 12px 16px;
+  }
+  .conference-copy .text-link {
+    font-size: 11px;
+  }
+  .conference-poster {
+    padding: 23px;
+    min-height: 260px;
+    border-radius: 12px;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .conference-poster .poster-name {
+    font-size: 58px;
+    line-height: 1.1;
+  }
+  .conference-poster .poster-city {
+    font-size: 27px;
+  }
+  .conference-poster > p {
+    font-size: 9px !important;
+  }
+  .fee-schedule {
+    margin-top: 30px;
+  }
+  .fee-schedule-heading {
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  body.conference-site .fee-schedule h3,
+  body.conference-site .registration h3 {
+    font-size: 23px;
+  }
+  .fee-table-wrap {
+    max-width: 100%;
+    border-radius: 9px;
+    overscroll-behavior-x: contain;
+  }
+  .fee-table-wrap th,
+  .fee-table-wrap td {
+    font-size: 11px;
+    padding: 13px 12px;
+  }
+  .registration {
+    padding: 20px;
+    margin-top: 25px;
+    gap: 18px;
+    border-radius: 11px;
+  }
+  .registration label {
+    font-size: 11px;
+  }
+  .registration select {
+    font-size: 16px;
+    min-height: 46px;
+  }
+  .registration .eyebrow {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 360px) {
+  body.conference-site .impact-sticky h2 {
+    font-size: 21px;
+  }
+  .event-tabs > button {
+    grid-template-columns: 48px minmax(0, 1fr);
+    padding: 12px;
+  }
+  .event-feature-art {
+    min-height: 190px;
+  }
+}
+@media (max-width: 760px) and (prefers-reduced-motion: reduce) {
+  body.conference-site .impact-sticky {
+    position: relative;
+    top: auto;
+  }
+  body.conference-site .impact-chapters article {
+    min-height: 0;
+    padding: 25px 0;
+  }
+}
+@media (max-width: 760px) {
+  body.conference-site #achievements .impact-sticky h2 {
+    font-size: 23px;
+    line-height: 1.2;
+    max-width: 280px;
+  }
+  body.conference-site #events .event-feature-copy h3 {
+    font-size: 24px;
+  }
+  body.conference-site #events .event-panel h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 760px) {
+  .event-tabs > button {
+    grid-template-columns: 72px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+  .event-tabs > button > strong {
+    white-space: nowrap;
+    font-size: 31px;
+  }
+  .event-tabs > button > strong span {
+    font-size: 14px;
+  }
+  .event-tabs > button > span:last-child {
+    font-size: 11px;
+  }
+}
+
+.event-tabs .legacy-stat-pair .legacy-stat {
+  font: inherit;
+  opacity: 1;
+}
+.legacy-stat-pair b {
+  font: inherit;
+}
+.legacy-stat-pair small {
+  display: none;
+}
+@media (max-width: 760px) {
+  .event-tabs #event-tab-legacy {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 15px 16px;
+  }
+  .event-tabs #event-tab-legacy > span:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .event-tabs #event-tab-legacy > .legacy-stat-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+    white-space: normal;
+  }
+  .event-tabs #event-tab-legacy .legacy-divider {
+    display: none;
+  }
+  .event-tabs #event-tab-legacy .legacy-stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #123e3b26;
+    border-radius: 7px;
+    padding: 11px 10px;
+    background: #ffffff40;
+  }
+  .event-tabs #event-tab-legacy .legacy-stat b {
+    font:
+      500 28px/1 'Manrope',
+      Arial,
+      sans-serif;
+    letter-spacing: -0.05em;
+  }
+  .event-tabs #event-tab-legacy .legacy-stat small {
+    display: block;
+    font:
+      400 10px/1.4 'Poppins',
+      Arial,
+      sans-serif;
+    letter-spacing: 0;
+  }
+  .event-tabs #event-tab-legacy > span:last-child {
+    grid-column: 1;
+    grid-row: 3;
+    font-size: 10px;
+  }
+  .event-tabs #event-tab-legacy[aria-selected='true'] .legacy-stat {
+    border-color: #ffffff40;
+    background: #ffffff0d;
+  }
+}
+
+@media (max-width: 760px) {
+  body.conference-site #achievements .impact-sticky {
+    isolation: isolate;
+    overflow: hidden;
+    background: #163c5c;
+    border: 1px solid #ffffff15;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 0 0 12px;
+    color: #fff;
+    box-shadow: 0 6px 18px #1738620c;
+  }
+  body.conference-site #achievements .impact-sticky::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      linear-gradient(90deg, #163c5cee, #163c5c88),
+      url('../assets/hero-heritage-user.png') center bottom/cover no-repeat;
+    opacity: 0.35;
+  }
+  body.conference-site #achievements .impact-sticky > .eyebrow {
+    color: #c8daec;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    margin: 0 0 9px;
+  }
+  body.conference-site #achievements .impact-sticky h2 {
+    font:
+      500 21px/1.25 'Poppins',
+      Arial,
+      sans-serif;
+    color: #fff;
+    letter-spacing: -0.025em;
+    max-width: 260px;
+  }
+  body.conference-site #achievements .impact-sticky h2 em {
+    color: #fff;
+    font: inherit;
+  }
+  body.conference-site #achievements .impact-display {
+    margin-top: 20px;
+    column-gap: 18px;
+  }
+  body.conference-site #achievements .impact-display .impact-index {
+    color: #b7cce2;
+    font-size: 8px;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+  }
+  body.conference-site #achievements .impact-display > strong {
+    color: #f2ca50;
+    font-size: 58px;
+    min-width: 105px;
+    font-weight: 500;
+  }
+  body.conference-site #achievements .impact-display > span:last-of-type {
+    color: #e1ebf5;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  body.conference-site #achievements .impact-line {
+    background: #ffffff20;
+    border-radius: 2px;
+    margin-top: 18px;
+  }
+  body.conference-site #achievements .impact-line i {
+    background: #f2ca50;
+  }
+  body.conference-site #achievements .impact-chapters article {
+    border-color: #163c5c22;
+  }
+  body.conference-site #achievements .impact-chapters article > span {
+    color: #456486;
+  }
+}

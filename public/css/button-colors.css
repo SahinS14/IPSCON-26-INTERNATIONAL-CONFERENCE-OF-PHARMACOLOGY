@@ -1,0 +1,36 @@
+body.conference-site .button,
+body.conference-site .story-stage .hero-event-actions a.button,
+body.conference-site .story-stage.continuation-active .hero-event-actions a.button,
+body .submit-button,
+body .contact-form button[type='submit'],
+body.delegate-site button.primary {
+  background: #f2ca50 !important;
+  color: #183c35 !important;
+  border-color: #dfb83c !important;
+  box-shadow: none;
+}
+body.conference-site header .nav-login-box {
+  background: #f2ca50;
+  border-color: #dfb83c;
+  color: #183c35;
+}
+@media (hover: hover) and (pointer: fine) {
+  body.conference-site .button:hover,
+  body.conference-site .story-stage .hero-event-actions a.button:hover,
+  body .submit-button:hover,
+  body .contact-form button[type='submit']:hover,
+  body.delegate-site button.primary:hover,
+  body.conference-site header .nav-login-box:hover {
+    background: #e5b936 !important;
+    color: #183c35 !important;
+  }
+}
+body.conference-site
+  .story-stage.film-playing.continuation-active[data-chapter='0']
+  .story-copy-0
+  .hero-event-actions
+  a.button {
+  background: #f2ca50 !important;
+  color: #183c35 !important;
+  border-color: #dfb83c !important;
+}

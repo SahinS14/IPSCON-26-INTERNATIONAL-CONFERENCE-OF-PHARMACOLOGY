@@ -1,0 +1,1638 @@
+:root {
+  --ui-ease: cubic-bezier(0.23, 1, 0.32, 1);
+}
+body {
+  text-rendering: optimizeLegibility;
+}
+button,
+a,
+input,
+select,
+textarea,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+button,
+a,
+summary {
+  touch-action: manipulation;
+}
+:focus-visible {
+  outline: 3px solid #356fb0;
+  outline-offset: 4px;
+}
+input,
+select,
+textarea {
+  scroll-margin-block: 100px;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+[hidden] {
+  display: none !important;
+}
+
+body.conference-site .section-label {
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  gap: 20px;
+}
+body.conference-site .eyebrow {
+  font-size: 11px;
+  line-height: 1.65;
+  letter-spacing: 0.13em;
+}
+body.conference-site .section p {
+  line-height: 1.75;
+}
+body.conference-site .event-panel-copy p,
+body.conference-site .event-agenda li,
+body.conference-site .impact-chapters p,
+body.conference-site .member-story-panel p {
+  font-size: 16px;
+}
+body.conference-site .person > span {
+  font-size: 11px;
+  line-height: 1.65;
+  display: block;
+  letter-spacing: 0.06em;
+  margin: 18px 0 8px;
+}
+body.conference-site .person h3 {
+  line-height: 1.3;
+}
+body.conference-site .event-badge,
+body.conference-site .event-tabs small,
+body.conference-site .about-gallery-tabs span,
+body.conference-site .member-story-tabs button,
+body.conference-site .impact-tags span {
+  font-size: 12px;
+}
+body.conference-site .fee-table-heading .eyebrow,
+body.conference-site .registration .eyebrow,
+body.conference-site .fee-table-heading > span,
+body.conference-site .registration-fees thead th span {
+  font-size: 11px;
+  line-height: 1.6;
+}
+body.conference-site .fee-note {
+  font-size: 13px;
+  color: #4e625b;
+}
+body.conference-site .fee-select label {
+  font-size: 12px;
+}
+body.conference-site .button,
+body.conference-site .text-link,
+body.conference-site summary {
+  min-height: 44px;
+}
+body.conference-site .button {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+body.conference-site .story-stage.film-playing[data-chapter='0'] .conference-subtitle {
+  line-height: 1.7;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+body.conference-site .story-stage.film-playing[data-chapter='0'] .story-copy-0 .eyebrow {
+  font-size: 11px;
+}
+body.conference-site .story-stage.film-playing[data-chapter='0'] .hero-location > span {
+  font-size: 11px;
+}
+body.conference-site .countdown-units strong {
+  font-variant-numeric: tabular-nums;
+}
+body.conference-site .js .impact-chapters article {
+  opacity: 1;
+}
+body.conference-site .impact-chapters article {
+  opacity: 1 !important;
+}
+body.conference-site .contact-links a {
+  overflow-wrap: anywhere;
+}
+
+body[data-auth] {
+  --muted: #526078;
+  --green: #2c5caf;
+}
+body[data-auth] .form-heading > p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #526078;
+  max-width: 38ch;
+}
+body[data-auth] .preview-note {
+  font-size: 12px;
+  line-height: 1.65;
+  color: #59677b;
+}
+body[data-auth] .field label {
+  font-size: 14px;
+  line-height: 1.5;
+}
+body[data-auth] .field input,
+body[data-auth] .field select {
+  font-size: 16px;
+  min-height: 52px;
+  border-color: #bcc8da;
+  background: #fff;
+}
+body[data-auth] .field input::placeholder {
+  color: #68768a;
+}
+body[data-auth] .password-help,
+body[data-auth] .field-error {
+  font-size: 12px;
+  line-height: 1.65;
+}
+body[data-auth] .remember-option,
+body[data-auth] .switch-auth {
+  font-size: 14px;
+  line-height: 1.65;
+}
+body[data-auth] .remember-option input {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+body[data-auth] .text-button {
+  font-size: 12px;
+  min-height: 32px;
+  color: #315697;
+}
+body[data-auth] .back-link {
+  font-size: 13px;
+  min-height: 44px;
+}
+body[data-auth] .submit-button {
+  font-size: 15px;
+  min-height: 52px;
+  background: #315cbb;
+  box-shadow: 0 4px 12px #315cbb1a;
+}
+body[data-auth] .form-heading h2 {
+  line-height: 1.18;
+  letter-spacing: -0.035em;
+}
+body[data-auth] .password-toggle,
+body[data-auth] .dialog-close {
+  min-width: 44px;
+  min-height: 44px;
+}
+body[data-auth] .password-toggle {
+  top: 4px;
+  right: 3px;
+  color: #5d6f88;
+}
+
+body.delegate-site {
+  --muted: #536780;
+}
+body.delegate-site .prose p,
+body.delegate-site .prose li,
+body.delegate-site .guide-row p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #4d6078;
+}
+body.delegate-site .prose h3,
+body.delegate-site .guide-row h3 {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #23466e;
+}
+body.delegate-site .field label,
+body.delegate-site .question legend {
+  font-size: 14px;
+  line-height: 1.6;
+}
+body.delegate-site .field small,
+body.delegate-site .note,
+body.delegate-site .preview,
+body.delegate-site .word-bar {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #50647f;
+}
+body.delegate-site .check {
+  font-size: 14px;
+  line-height: 1.75;
+}
+body.delegate-site .field input,
+body.delegate-site .field select,
+body.delegate-site .field textarea {
+  font-size: 16px;
+  border-color: #bac9dd;
+  line-height: 1.6;
+}
+body.delegate-site .field textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+body.delegate-site .primary,
+body.delegate-site .secondary {
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 44px;
+  white-space: normal;
+  text-align: center;
+}
+body.delegate-site .subtitle {
+  font-size: 14px;
+  line-height: 1.7;
+}
+body.delegate-site .eyebrow {
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+body.delegate-site .instructions-content .guide-row {
+  padding-block: 22px;
+}
+body.delegate-site .event-countdown b {
+  font-variant-numeric: tabular-nums;
+}
+body.delegate-site .toast {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: calc(100vw - 32px);
+}
+body.delegate-site .abstract-guidelines .prose {
+  max-height: 480px;
+}
+body.delegate-site .text-link {
+  min-height: 44px;
+}
+@media (hover: hover) and (pointer: fine) {
+  body[data-auth] .submit-button:hover {
+    background: #244d9f;
+  }
+  button,
+  a.button {
+    transition:
+      background-color 180ms ease,
+      border-color 180ms ease,
+      color 180ms ease,
+      transform 150ms var(--ui-ease);
+  }
+}
+@media (max-width: 760px) {
+  body.conference-site .section-label {
+    font-size: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  body.conference-site .section-label > span:last-child {
+    max-width: 100%;
+  }
+  body.conference-site .impact-layout {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  body.conference-site .impact-sticky {
+    position: relative;
+    top: auto;
+  }
+  body.conference-site .impact-sticky > img {
+    display: none;
+  }
+  body.conference-site .impact-display {
+    display: none;
+  }
+  body.conference-site .impact-chapters article {
+    min-height: auto;
+    padding: 28px 0;
+  }
+  body.conference-site .impact-chapters h3 {
+    font-size: 29px;
+    line-height: 1.2;
+    margin: 16px 0;
+  }
+  body.conference-site .impact-tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  body.conference-site .story-stage.film-playing[data-chapter='0'] .story-copy-0 h1 {
+    font-size: clamp(48px, 14vw, 78px);
+  }
+  body.conference-site .story-stage.film-playing[data-chapter='0'] .story-copy-0 .eyebrow {
+    font-size: 10px;
+  }
+  body.conference-site .story-stage.film-playing[data-chapter='0'] .conference-subtitle {
+    font-size: 11px;
+  }
+  body.conference-site .story-stage.film-playing .story-copy-wrap {
+    padding-bottom: 80px;
+  }
+  body.conference-site .fee-select select {
+    font-size: 16px;
+  }
+  body[data-auth] .auth-layout {
+    padding-inline: 22px;
+  }
+  body[data-auth] .form-row {
+    gap: 12px;
+  }
+  body[data-auth] .form-heading h2 {
+    font-size: 34px;
+  }
+  body.delegate-site .card {
+    padding: 20px 18px;
+  }
+  body.delegate-site .page-heading h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  body.delegate-site .instructions-content .guide-row {
+    grid-template-columns: 20px minmax(0, 1fr);
+    gap: 10px;
+  }
+  body.delegate-site .check input {
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  body.conference-site .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  body.conference-site .member-pass {
+    transform: none;
+  }
+}
+@media print {
+  .sidebar,
+  .story-track,
+  .welcome-banner,
+  .form-actions,
+  .shade {
+    display: none !important;
+  }
+  .main {
+    margin: 0 !important;
+  }
+  #content {
+    padding: 0 !important;
+  }
+  .card {
+    break-inside: avoid;
+    box-shadow: none !important;
+  }
+  .prose {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
+body.conference-site .story-stage.film-playing[data-chapter='0'] .hero-event-actions .button {
+  background: #f6efd9;
+  color: #173e36;
+  border-color: #f6efd9;
+  text-shadow: none;
+}
+body.conference-site .story-stage.film-playing[data-chapter='0'] .story-controls {
+  background: linear-gradient(0deg, #102e29ed, #102e2966);
+  border-radius: 12px;
+  color: #fff;
+}
+body.conference-site .story-stage.film-playing[data-chapter='0'] .story-controls button,
+body.conference-site .story-stage.film-playing[data-chapter='0'] .story-controls a {
+  color: #fff;
+  font-size: 12px;
+}
+@media (min-width: 801px) {
+  body.conference-site .story-copy-0 h1 {
+    font-size: clamp(80px, 9vw, 130px);
+  }
+}
+body.conference-site .science-topics summary {
+  font-size: 15px;
+  line-height: 1.6;
+  gap: 12px;
+  padding-block: 20px;
+}
+body.conference-site .science-topics details p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+body.conference-site .story-copy-0 .hero-event-actions a.button {
+  background: #f6efd9 !important;
+  color: #173e36 !important;
+  border-color: #f6efd9 !important;
+}
+
+body.conference-site main > section:not(#home),
+body.conference-site footer,
+body.conference-site header,
+body[data-auth],
+body[data-auth] button,
+body[data-auth] input,
+body[data-auth] select {
+  font-family: 'Poppins', sans-serif;
+}
+body.conference-site
+  main
+  > section:not(#home)
+  :is(h2, h3, h4, p, span, strong, button, a, summary, select, td, th),
+body.conference-site footer :is(p, a, span),
+body[data-auth] :is(h1, h2, p, span, small, label, input, select, button, a) {
+  font-family: 'Poppins', sans-serif;
+}
+body.conference-site main > section:not(#home) :is(h2, h3) {
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.2;
+}
+body.conference-site main > section:not(#home) h2 em {
+  font-style: normal;
+  font-weight: 500;
+}
+body.conference-site main > section:not(#home) p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+body.conference-site main > section:not(#home) .eyebrow {
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.09em;
+  font-weight: 600;
+}
+body.conference-site .section-label {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+body.conference-site .science-topics summary {
+  font-size: 16px;
+}
+body.conference-site .member-story-tabs button,
+body.conference-site .about-gallery-tabs span {
+  font-size: 13px;
+  line-height: 1.6;
+}
+body.conference-site .event-tabs > button > span,
+body.conference-site .event-tabs small {
+  font-size: 12px;
+  line-height: 1.6;
+}
+body.conference-site .registration-fees table,
+body.conference-site .content-table-scroll table {
+  font-size: 15px;
+  line-height: 1.7;
+}
+body.conference-site .registration-fees thead th {
+  font-size: 13px;
+}
+body.conference-site .registration-fees thead th span {
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+body.conference-site .story-copy-0 {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+body.conference-site .story-stage.film-playing[data-chapter='0'] .story-copy-0 {
+  text-shadow:
+    0 2px 6px #17231de6,
+    0 0 24px #17231d99;
+}
+body[data-auth] .form-heading h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.045em;
+}
+body[data-auth] .story-copy h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+body[data-auth] .preview-note,
+body[data-auth] .password-help {
+  font-size: 13px;
+}
+body.delegate-site .field small,
+body.delegate-site .note,
+body.delegate-site .preview,
+body.delegate-site .word-bar {
+  font-size: 13px;
+}
+body.delegate-site .primary,
+body.delegate-site .secondary {
+  font-size: 14px;
+}
+body.conference-site footer p,
+body.conference-site .footer-bottom {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+body.conference-site .committee-directory {
+  background: #eff2ec;
+  padding-block: 96px;
+}
+.committee-intro {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: end;
+  gap: 80px;
+  margin-bottom: 64px;
+}
+body.conference-site .committee-intro h2 {
+  font-size: clamp(36px, 4.4vw, 62px);
+  margin: 0;
+  line-height: 1.16;
+}
+.committee-intro > p {
+  max-width: 440px;
+  color: #50645e;
+  margin-bottom: 5px;
+}
+.committee-intro h2 em {
+  color: #a3462e;
+}
+.committee-group + .committee-group {
+  margin-top: 48px;
+}
+.committee-group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #cbd5cb;
+}
+body.conference-site .committee-group-heading h3 {
+  font-size: 20px;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+  margin: 0;
+}
+.committee-group-heading > span {
+  font-size: 11px;
+  color: #53695e;
+  letter-spacing: 0.08em;
+  line-height: 1.7;
+}
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.committee-person {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 24px;
+  padding: 24px;
+  background: #fcfcf8;
+  border: 1px solid #d8e0d5;
+  border-radius: 16px;
+  align-items: center;
+}
+.committee-leadership .committee-person {
+  background: #e2eade;
+  border-top: 3px solid #4a6a59;
+}
+.committee-person .portrait {
+  width: 130px;
+  height: 150px;
+  margin: 0;
+  border-radius: 10px;
+  background: #d7dfd1;
+  overflow: hidden;
+}
+.committee-person .portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  filter: none;
+  display: block;
+}
+body.conference-site .committee-person .committee-role {
+  font-size: 11px;
+  color: #9a432e;
+  letter-spacing: 0.07em;
+  line-height: 1.7;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+body.conference-site .committee-person h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+  color: #123e3b;
+  overflow-wrap: anywhere;
+}
+.committee-affiliation {
+  display: block;
+  border-top: 1px solid #dbe1d6;
+  padding-top: 12px;
+  font-size: 12px;
+  color: #50665b;
+  line-height: 1.7;
+}
+@media (max-width: 1100px) {
+  .committee-person {
+    grid-template-columns: 105px minmax(0, 1fr);
+    gap: 18px;
+    padding: 20px;
+  }
+  .committee-person .portrait {
+    width: 105px;
+    height: 130px;
+  }
+  body.conference-site .committee-person h3 {
+    font-size: 19px;
+  }
+  .committee-intro {
+    gap: 36px;
+  }
+}
+@media (max-width: 760px) {
+  body.conference-site main > section:not(#home) h2 {
+    font-size: clamp(30px, 8vw, 40px);
+    line-height: 1.22;
+  }
+  body.conference-site main > section:not(#home) p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  body.conference-site .section-label {
+    font-size: 11px;
+  }
+  body.conference-site .committee-directory {
+    padding-block: 60px;
+  }
+  .committee-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 38px;
+  }
+  .committee-group-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .committee-group-heading > span {
+    font-size: 10px;
+  }
+  .committee-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .committee-person {
+    grid-template-columns: 100px minmax(0, 1fr);
+    padding: 18px;
+    gap: 18px;
+    border-radius: 12px;
+  }
+  .committee-person .portrait {
+    width: 100px;
+    height: 125px;
+  }
+  body.conference-site .committee-person h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  body.conference-site .committee-person .committee-role {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .committee-affiliation {
+    font-size: 11px;
+    padding-top: 9px;
+  }
+  body[data-auth] .form-heading h2 {
+    font-size: 30px;
+  }
+}
+body.conference-site {
+  font-family: 'Poppins', sans-serif;
+}
+body.conference-site #home {
+  font-family: 'DM Sans', sans-serif;
+}
+body.conference-site dialog,
+body.conference-site dialog :is(h2, h3, p, span, button) {
+  font-family: 'Poppins', sans-serif;
+}
+body.conference-site .event-tabs {
+  min-width: 0;
+}
+body.conference-site .event-tabs > button {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+body.conference-site .committee-person-copy {
+  min-width: 0;
+}
+body.conference-site #committee .committee-person .committee-role {
+  font-size: 11px;
+  line-height: 1.7;
+}
+@media (max-width: 760px) {
+  body.conference-site #committee .committee-person .committee-role {
+    font-size: 11px;
+  }
+  .event-tabs strong {
+    max-width: 100%;
+  }
+}
+
+body.conference-site .section {
+  padding-block: 68px;
+}
+body.conference-site .section-label {
+  margin-bottom: 32px;
+}
+body.conference-site .section-heading {
+  margin-bottom: 32px;
+}
+body.conference-site .about-immersive {
+  padding-bottom: 68px;
+}
+body.conference-site .impact-chapters article {
+  min-height: 42svh;
+  padding-block: 32px;
+}
+body.conference-site header nav {
+  font-size: 14px;
+  gap: 20px;
+}
+body.conference-site header nav a {
+  padding-block: 15px;
+  line-height: 1.5;
+}
+body.conference-site .nav-join {
+  font-size: 14px;
+}
+
+body.conference-site .kolkata-film:after {
+  display: block;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 30, 27, 0.68),
+      rgba(10, 30, 27, 0.32) 42%,
+      rgba(10, 30, 27, 0.02) 78%
+    ),
+    linear-gradient(0deg, rgba(10, 30, 27, 0.25), transparent 35%);
+  pointer-events: none;
+}
+body.conference-site .kolkata-film,
+body.conference-site .kolkata-film video {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+body.conference-site .story-stage {
+  min-height: 0;
+}
+body.conference-site .story-stage.film-playing .story-copy-0 {
+  text-shadow: 0 2px 12px #102b2940;
+}
+body.conference-site .team-section {
+  background: #fafbf7;
+  overflow: hidden;
+}
+.team-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr;
+  align-items: center;
+  gap: 7%;
+  min-height: 560px;
+}
+body.conference-site #committee .team-intro h2 {
+  font-size: clamp(55px, 6.3vw, 88px);
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+  font-weight: 600;
+  margin: 18px 0 24px;
+}
+body.conference-site #committee .team-intro h2 em {
+  color: #a3462e;
+  font-weight: 600;
+}
+.team-intro > p:last-of-type {
+  max-width: 300px;
+  color: #52675f;
+}
+.team-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 28px;
+}
+.team-controls button {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #c7d3c9;
+  border-radius: 50%;
+  color: #123e3b;
+  background: transparent;
+}
+.team-controls > span {
+  font-size: 13px;
+  color: #53695e;
+  font-variant-numeric: tabular-nums;
+}
+.team-deck {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  isolation: isolate;
+}
+.team-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66%;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #d9e1d7;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 15px 32px #153f3610;
+  transition:
+    transform 280ms var(--ui-ease),
+    opacity 200ms ease;
+  transform-origin: left center;
+}
+.team-photo {
+  height: calc(100% - 110px);
+  background: #e7ebe4;
+  overflow: hidden;
+}
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+.team-caption {
+  padding: 18px 22px;
+  background: #fff;
+  min-height: 110px;
+}
+body.conference-site #committee .team-caption p {
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  color: #9a432e;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+body.conference-site #committee .team-caption h3 {
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+  margin: 0;
+  font-weight: 500;
+}
+.team-card[data-offset='0'] {
+  z-index: 6;
+  transform: none;
+  opacity: 1;
+}
+.team-card[data-offset='1'] {
+  z-index: 5;
+  transform: translateX(30%) scale(0.87);
+  opacity: 0.9;
+}
+.team-card[data-offset='2'] {
+  z-index: 4;
+  transform: translateX(56%) scale(0.74);
+  opacity: 0.72;
+}
+.team-card[data-offset='3'] {
+  z-index: 3;
+  transform: translateX(78%) scale(0.61);
+  opacity: 0.5;
+}
+.team-card[data-offset='4'],
+.team-card[data-offset='5'] {
+  z-index: 1;
+  transform: translateX(84%) scale(0.55);
+  opacity: 0;
+  visibility: hidden;
+}
+body.conference-site .contact-redesign {
+  background: #eaf0e7;
+  gap: 8%;
+  align-items: start;
+}
+.contact-intro > p:not(.eyebrow) {
+  max-width: 460px;
+  color: #52675f;
+  margin-top: 24px;
+}
+body.conference-site .contact-links {
+  margin-top: 32px;
+}
+body.conference-site .contact-links > a {
+  font-size: 18px;
+  padding: 16px 0;
+  gap: 12px;
+}
+body.conference-site .contact-links p {
+  margin-top: 22px;
+}
+body.conference-site .contact-links p a {
+  font-size: 16px;
+}
+.contact-form {
+  background: #fff;
+  padding: 32px;
+  border: 1px solid #d2ddcf;
+  border-radius: 16px;
+}
+body.conference-site .contact-form-heading h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+body.conference-site .contact-form-heading p {
+  font-size: 14px;
+  color: #5a6c62;
+  margin-bottom: 26px;
+}
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.contact-field {
+  margin-bottom: 20px;
+  min-width: 0;
+}
+.contact-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #234d42;
+}
+.contact-field input,
+.contact-field textarea,
+.contact-field select {
+  width: 100%;
+  padding: 13px 14px;
+  background: #fafbf8;
+  color: #123e3b;
+  border: 1px solid #bdcbbb;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 48px;
+}
+.contact-field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+.contact-field :is(input, textarea)::placeholder {
+  color: #738074;
+}
+body.conference-site #contact .contact-form-note,
+body.conference-site #contact #contact-feedback {
+  font-size: 12px;
+  color: #52675f;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+.contact-form .button {
+  border: 1px solid #123e3b;
+  cursor: pointer;
+}
+body.conference-site footer {
+  background: #f7f3eb;
+  padding-block: 30px 22px;
+}
+.back-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #ffffff70;
+  background: #123e3b;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 45;
+  box-shadow: 0 6px 20px #123e3b25;
+  cursor: pointer;
+}
+
+body :is(a, button, summary, input, select, textarea) {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms var(--ui-ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  body.conference-site a:not(.button):hover {
+    color: #a3462e;
+  }
+  body.conference-site :is(.button, .back-top):hover {
+    background: #24594e !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px #123e3b20;
+  }
+  body.conference-site
+    :is(
+      .team-controls button,
+      .about-gallery-controls button,
+      .member-story-controls button
+    ):hover {
+    background: #123e3b;
+    color: #fff;
+    border-color: #123e3b;
+    transform: translateY(-2px);
+  }
+  body.conference-site :is(summary, [role='tab']):hover {
+    background-color: #a8bca51f;
+    color: #a3462e;
+  }
+  body :is(input, select, textarea):hover {
+    border-color: #6e8e7d;
+  }
+  body[data-auth] :is(.submit-button, .social-options button):hover,
+  body.delegate-site :is(.primary, .secondary):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px #23456f20;
+  }
+}
+body :is(button, .button):active {
+  transform: translateY(0) scale(0.98);
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  body.conference-site header nav {
+    font-size: 13px;
+    gap: 13px;
+  }
+  .team-deck {
+    height: 470px;
+  }
+  .team-layout {
+    min-height: 480px;
+  }
+}
+@media (max-width: 800px) {
+  body.conference-site .section {
+    padding-block: 48px;
+  }
+  body.conference-site .section-label {
+    margin-bottom: 26px;
+  }
+  body.conference-site header nav {
+    font-size: 16px;
+    gap: 8px 24px;
+  }
+  body.conference-site .story-track .story-stage {
+    height: calc(100svh - 80px);
+    min-height: 680px;
+    padding: 28px 0 0;
+    display: block;
+  }
+  body.conference-site .story-stage .story-scene {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: 0;
+  }
+  body.conference-site .story-copy-wrap {
+    padding-bottom: 70px;
+  }
+  body.conference-site .story-stage.film-playing .kolkata-film video {
+    object-position: 58% center;
+  }
+  body.conference-site .kolkata-film:after {
+    background:
+      linear-gradient(90deg, #0c2523a6, #0c25232e),
+      linear-gradient(0deg, #0c25234d, transparent 45%);
+  }
+  body.conference-site .impact-chapters article {
+    min-height: 0;
+    padding-block: 24px;
+  }
+  .team-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    min-height: 0;
+  }
+  body.conference-site #committee .team-intro h2 {
+    font-size: 48px;
+    line-height: 1.12;
+    margin: 12px 0 16px;
+  }
+  .team-intro h2 br {
+    display: none;
+  }
+  .team-intro h2 em:before,
+  .team-intro h2 em:after {
+    content: ' ';
+  }
+  .team-intro > p:last-of-type {
+    max-width: 100%;
+  }
+  .team-controls {
+    margin-top: 20px;
+  }
+  .team-deck {
+    height: 430px;
+    margin-bottom: 0;
+  }
+  .team-card {
+    width: 73%;
+  }
+  .team-card[data-offset='1'] {
+    transform: translateX(22%) scale(0.87);
+  }
+  .team-card[data-offset='2'] {
+    transform: translateX(40%) scale(0.74);
+  }
+  .team-card[data-offset='3'] {
+    transform: translateX(54%) scale(0.61);
+  }
+  .team-caption {
+    padding: 16px;
+  }
+  .team-photo {
+    height: calc(100% - 116px);
+  }
+  body.conference-site #committee .team-caption h3 {
+    font-size: 18px;
+  }
+  .contact-form {
+    padding: 24px 20px;
+  }
+  .contact-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  body.conference-site .contact-links > a {
+    font-size: 16px;
+  }
+  .back-top {
+    right: 18px;
+    bottom: 18px;
+    width: 44px;
+    height: 44px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body :is(a, button, summary, input, select, textarea),
+  .team-card {
+    transition: none !important;
+  }
+}
+
+body.conference-site .kolkata-film video {
+  height: 127.21%;
+  object-position: center top;
+}
+.team-card[data-offset='1'] {
+  opacity: 1;
+}
+.team-card[data-offset='2'] {
+  opacity: 0.96;
+}
+.team-card[data-offset='3'] {
+  opacity: 0.9;
+}
+body.conference-site .story-stage.film-playing[data-chapter='0'] .story-copy-0 {
+  text-shadow: 0 2px 10px #102b2966;
+}
+@media (min-width: 801px) and (prefers-reduced-motion: no-preference) {
+  body.conference-site .story-track {
+    height: 220svh;
+  }
+}
+
+body.conference-site .story-scene .skyline-layer {
+  position: absolute;
+  top: auto;
+  bottom: -2%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+  transform-origin: right bottom;
+}
+body.conference-site .skyline-layer img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 155%;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: right bottom;
+  mask-image: none;
+}
+body.conference-site .researchers-layer {
+  z-index: 4;
+  right: -2%;
+  height: 70%;
+  bottom: 8%;
+}
+body.conference-site .microscope-layer {
+  z-index: 4;
+}
+
+body.conference-site .skyline-layer {
+  mask-image: linear-gradient(90deg, transparent 0%, #000 27%, #000 100%);
+}
+@media (min-width: 801px) and (max-width: 1100px) {
+  body.conference-site .skyline-layer img {
+    width: 175%;
+  }
+}
+@media (max-width: 800px) {
+  body.conference-site .story-track .story-stage {
+    min-height: 820px;
+  }
+  body.conference-site .story-scene .skyline-layer {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    mask-image: none;
+  }
+  body.conference-site .skyline-layer img {
+    width: 300%;
+    max-width: none;
+    height: auto;
+    right: -12%;
+    bottom: 0;
+    left: auto;
+    object-fit: contain;
+  }
+}
+body.conference-site .story-scene .skyline-layer img {
+  top: auto;
+  bottom: 0;
+}
+
+body.conference-site .story-stage .researchers-layer {
+  z-index: 6;
+  right: 20%;
+  width: 27%;
+  height: 62%;
+  bottom: 7%;
+  pointer-events: none;
+}
+body.conference-site .story-stage .microscope-layer {
+  z-index: 4;
+  left: -8%;
+  width: 20%;
+  height: 40%;
+  bottom: 7%;
+  pointer-events: none;
+}
+body.conference-site .story-stage .researchers-layer img,
+body.conference-site .story-stage .microscope-layer img {
+  animation: none;
+  filter: none;
+}
+body.conference-site .story-stage .story-copy-wrap {
+  z-index: 10;
+}
+body.conference-site .story-stage .story-copy {
+  max-width: 74%;
+  backface-visibility: hidden;
+}
+body.conference-site .story-stage .story-controls {
+  z-index: 12;
+}
+body.conference-site .story-stage .story-scene {
+  isolation: isolate;
+}
+body.conference-site .story-stage .skyline-layer {
+  z-index: 5;
+}
+body.conference-site .story-stage:not(.film-playing) .story-copy-0 {
+  color: #123e3b;
+  text-shadow: none;
+}
+body.conference-site
+  .story-stage:not(.film-playing)
+  .story-copy-0
+  :is(
+    .eyebrow,
+    .eyebrow strong,
+    h1,
+    .conference-subtitle,
+    .hero-location > span,
+    .hero-location > strong
+  ) {
+  color: #123e3b;
+}
+body.conference-site .story-stage:not(.film-playing) .story-copy-0 .hero-location em {
+  color: #a3462e;
+}
+@media (max-width: 1100px) and (min-width: 801px) {
+  body.conference-site .story-stage .researchers-layer {
+    right: 13%;
+    width: 30%;
+    height: 55%;
+    bottom: 7%;
+  }
+}
+@media (max-width: 800px) {
+  body.conference-site .story-stage .researchers-layer,
+  body.conference-site .story-stage .microscope-layer,
+  body.conference-site .story-stage canvas {
+    display: none !important;
+  }
+  body.conference-site .story-stage .story-copy {
+    max-width: 100%;
+  }
+  body.conference-site .story-stage .story-copy-0 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+  body.conference-site .story-stage .story-copy-1,
+  body.conference-site .story-stage .story-copy-2 {
+    display: none !important;
+  }
+}
+
+body.conference-site .story-stage .researchers-layer {
+  display: none !important;
+}
+
+body.conference-site header .nav-login-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #123e3b;
+  background: transparent;
+  color: #123e3b;
+  padding: 11px 21px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+  order: 1;
+}
+body.conference-site header .brand {
+  order: 0;
+}
+body.conference-site header #navigation {
+  order: 2;
+  margin-left: auto;
+}
+body.conference-site header .menu-toggle {
+  order: 3;
+}
+@media (hover: hover) and (pointer: fine) {
+  body.conference-site header .nav-login-box:hover {
+    background: #123e3b;
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  body.conference-site header {
+    gap: 12px;
+  }
+  body.conference-site header .nav-login-box {
+    padding: 9px 12px;
+    font-size: 11px;
+    margin-left: auto;
+  }
+  body.conference-site header .brand {
+    width: clamp(150px, 48vw, 220px);
+  }
+  body.conference-site header .brand img {
+    max-width: 100%;
+  }
+  body.conference-site header #navigation {
+    margin-left: 0;
+  }
+}
+
+body.conference-site header .nav-login-box {
+  white-space: nowrap;
+  min-width: 65px;
+}
+
+body.conference-site header #navigation {
+  order: 1;
+}
+body.conference-site header .nav-login-box {
+  order: 2;
+  margin-left: 0;
+}
+body.conference-site header .menu-toggle {
+  order: 3;
+}
+body.conference-site .back-top {
+  bottom: 92px;
+  bottom: calc(92px + env(safe-area-inset-bottom));
+  right: 28px;
+}
+@media (max-width: 800px) {
+  body.conference-site header .nav-login-box {
+    margin-left: auto;
+  }
+  body.conference-site .back-top {
+    right: 19px;
+    bottom: 80px;
+    bottom: calc(80px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 800px) {
+  body.conference-site header .menu-toggle {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    border: 1px solid #c8d0c4;
+    border-radius: 9px;
+    background: #f0f0e7;
+    color: #123e3b;
+    flex-shrink: 0;
+    box-shadow: none;
+    touch-action: manipulation;
+  }
+  body.conference-site header .menu-toggle .icon {
+    width: 21px;
+    height: 21px;
+    stroke-width: 1.7;
+  }
+  body.conference-site header .menu-toggle[aria-expanded='true'] {
+    background: #123e3b;
+    color: #fff;
+    border-color: #123e3b;
+  }
+  body.conference-site header nav.open {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+    padding: 12px 6% 18px;
+    background: #f7f3eb;
+    border-bottom: 1px solid #d8dbcf;
+    box-shadow: 0 14px 20px #123e3b0d;
+  }
+  body.conference-site header nav.open > a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 6px;
+    border-bottom: 1px solid #123e3b12;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 100%;
+    text-align: left;
+  }
+  body.conference-site header nav.open > a:last-child {
+    border-bottom: 0;
+  }
+  body.conference-site header nav.open > a:active {
+    background: #e7ebe2;
+  }
+}
+
+body.conference-site .event-agenda li {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+  padding: 13px 0;
+}
+body.conference-site .event-agenda li::before {
+  position: static;
+  inset: auto;
+  align-self: baseline;
+  line-height: inherit;
+  font-size: 10px;
+}
+body.conference-site #contact {
+  height: auto;
+  min-height: 0;
+  align-items: start;
+  padding-bottom: 65px;
+}
+body.conference-site #contact .contact-form {
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+body.conference-site #contact .contact-form .button {
+  position: static;
+  display: inline-flex;
+  max-width: 100%;
+  margin: 0;
+}
+body.conference-site > footer {
+  position: relative;
+  clear: both;
+  margin-top: 0;
+  padding-top: 34px;
+}
+body.conference-site > footer > div:first-child img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 12px;
+}
+.event-panel[hidden] {
+  display: none !important;
+}
+@media (max-width: 760px) {
+  body.conference-site #contact {
+    padding-bottom: 42px;
+  }
+  body.conference-site > footer {
+    padding-top: 28px;
+  }
+  .event-panel {
+    scroll-margin-top: 96px;
+  }
+}
+body.conference-site #contact {
+  row-gap: 32px;
+  column-gap: 6%;
+  grid-auto-rows: auto;
+}
+@media (max-width: 800px) {
+  body.conference-site #contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  body.conference-site #contact > .contact-intro,
+  body.conference-site #contact > .contact-form {
+    width: 100%;
+    flex: none;
+  }
+}
