@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>User details | IPSCON ’26 delegate portal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/dashboard.css?v=17" />
+    <script src="js/dashboard.js?v=16" defer></script>
+    <link rel="stylesheet" href="css/refinements.css?v=19" />
+    <link rel="stylesheet" href="css/whatsapp.css?v=1" />
+    <link rel="stylesheet" href="css/button-colors.css?v=1" />
+    <link rel="stylesheet" href="css/dashboard-polish.css?v=1" />
+  </head>
+  <body class="delegate-site" data-page="view-profile">
+    <a class="skip" href="#content">Skip to content</a>
+    <div class="shade"></div>
+    <aside class="sidebar">
+      <button type="button" class="sidebar-close" id="close-menu" aria-label="Close menu">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <path d="m6 6 12 12M18 6 6 18" />
+        </svg></button
+      ><a class="brand" href="index.html"
+        ><img src="assets/ips-logo.png" alt="Indian Pharmacological Society logo" /><span
+          >INDIAN PHARMACOLOGICAL SOCIETY<b>WEST BENGAL STATE BRANCH</b></span
+        ></a
+      >
+      <div class="workspace-label">YOUR DELEGATE WORKSPACE</div>
+      <nav aria-label="Dashboard navigation"></nav>
+      <div class="sidebar-city" aria-hidden="true">
+        <img src="assets/hero-heritage-user.png" alt="" /><span>KOLKATA · THE CITY OF JOY</span>
+      </div>
+      <div class="sidebar-bottom">
+        <button id="signout" class="signout">↗ <span>Sign out</span></button
+        ><small>IPSCON ’26 · KOLKATA</small>
+      </div>
+    </aside>
+    <div class="main">
+      <header>
+        <button id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+        <div class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+          <a href="index.html" class="breadcrumb-home" aria-label="Conference home"
+            ><svg
+              class="ui-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="m3 10 9-7 9 7v10H3Zm6 10v-7h6v7" /></svg></a
+          ><span class="crumb-separator">›</span><span class="crumb-parent">Delegate portal</span
+          ><span class="crumb-separator">›</span
+          ><span class="crumb-current" aria-current="page"
+            ><i id="crumb-icon"></i><b id="crumb">Instructions</b></span
+          >
+        </div>
+        <span class="edition">IPSCON ’26 · KOLKATA</span
+        ><button class="avatar" data-page="profile" aria-label="Open user profile">YK</button>
+      </header>
+      <main id="content" tabindex="-1"></main>
+      <footer>© 2026 Indian Pharmacological Society · West Bengal</footer>
+    </div>
+    <div class="toast" role="status" hidden></div>
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/918100881625"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp: +91 81008 81625"
+      title="WhatsApp: +91 81008 81625"
+      ><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+        <path
+          d="M20.5 3.5A11.9 11.9 0 0 0 12 0 12 12 0 0 0 1.6 18L0 24l6.2-1.6A12 12 0 0 0 12 24h.1A12 12 0 0 0 24 12a11.9 11.9 0 0 0-3.5-8.5ZM12.1 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.7 1 1-3.6-.3-.4A10 10 0 1 1 12.1 22Zm5.5-7.5c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6L9 6.9c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4l-.6-.3Z"
+        /></svg
+    ></a>
+  </body>
+</html>
