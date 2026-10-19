@@ -1,0 +1,15 @@
+/* The header and footer use the original homepage stylesheets. */
+body.registration-site > header,
+body.registration-site > footer {
+  --paper: #f7f3eb;
+  --ink: #123e3b;
+  --muted: #5c6d67;
+  --line: #d8dbcf;
+  --rust: #a3462e;
+  --gold: #b88c47;
+  color: var(--ink);
+  line-height: normal;
+}
+body.registration-site > footer { background: #f7f3eb; }
+/* Keep the registration form's existing layout isolated from homepage main styles. */
+body.registration-site > main { max-width: 1220px; }

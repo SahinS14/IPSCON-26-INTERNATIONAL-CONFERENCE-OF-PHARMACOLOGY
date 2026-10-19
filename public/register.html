@@ -5,30 +5,82 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#f7f3eb" />
     <title>Complete your registration | IPSCON ’26</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="js/register.js" defer></script>
+    <script src="js/registration-shell.js?v=2" defer></script>
+  
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;600;700&family=Manrope:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/register.css" />
-    <script src="js/register.js" defer></script>
+    <link rel="stylesheet" href="css/hero-story.css?v=6" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cinematic.css?v=19" />
+    <link rel="stylesheet" href="css/icons.css?v=1" />
+    <link rel="stylesheet" href="css/refinements.css?v=25" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/hero-continuation.css?v=9" />
+    <link rel="stylesheet" href="css/preloader.css?v=8" />
     <link rel="stylesheet" href="css/whatsapp.css?v=1" />
     <link rel="stylesheet" href="css/button-colors.css?v=1" />
+    <link rel="stylesheet" href="css/mobile-type.css?v=2" />
+    <link rel="stylesheet" href="css/mobile-sections.css?v=1" />
+    <link rel="stylesheet" href="css/register.css?v=2" />
+    <link rel="stylesheet" href="css/registration-shell.css?v=4" />
   </head>
-  <body>
+  <body class="conference-site registration-site">
     <a class="skip" href="#registration-form">Skip to registration form</a>
+    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <symbol id="ui-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6" /></symbol>
+        <symbol id="ui-external" viewBox="0 0 24 24">
+          <path d="M9 5H5v14h14v-4M13 4h7v7M11 13l9-9" />
+        </symbol>
+        <symbol id="ui-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+        <symbol id="ui-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" /></symbol>
+        <symbol id="ui-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" /></symbol>
+        <symbol id="ui-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" /></symbol>
+        <symbol id="ui-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8Z" /></symbol>
+        <symbol id="ui-medical" viewBox="0 0 24 24">
+          <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6Z" />
+        </symbol>
+        <symbol id="ui-search" viewBox="0 0 24 24">
+          <circle cx="10" cy="10" r="6" />
+          <path d="m15 15 6 6" />
+        </symbol>
+        <symbol id="ui-network" viewBox="0 0 24 24">
+          <circle cx="12" cy="5" r="2" />
+          <circle cx="5" cy="18" r="2" />
+          <circle cx="19" cy="18" r="2" />
+          <path d="m11 7-5 9m7-9 5 9M7 18h10" />
+        </symbol>
+        <symbol id="ui-circle" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="8" />
+          <path d="M12 7v10M7 12h10" />
+        </symbol>
+      </defs>
+    </svg>
     <header>
-      <a href="index.html" aria-label="Indian Pharmacological Society home"
-        ><img
-          src="assets/ips-logo.png"
-          alt="Indian Pharmacological Society"
-          width="240"
-          height="65"
-      /></a>
-      <nav aria-label="Main navigation">
-        <a href="index.html">Back to conference</a
-        ><a href="register.html" aria-current="page">Register</a><a href="login.html">Log in</a>
+      <a class="brand" href="index.html#home" aria-label="Indian Pharmacological Society, home"
+        ><img src="assets/ips-logo.png" alt="Indian Pharmacological Society" /><span
+          >WEST BENGAL STATE BRANCH</span
+        ></a
+      ><a href="login.html" class="nav-login-box">Log in</a>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html#home">Home</a><a href="index.html#about">About us</a><a href="index.html#events">Our events</a
+        ><a href="index.html#conference">IPSCON ’26</a><a href="index.html#committee">Committee</a
+        ><a href="register.html">Register</a><a href="index.html#contact">Contact</a>
       </nav>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="navigation"
+        aria-label="Open navigation"
+      >
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="index.html#ui-menu" /></svg>
+      </button>
     </header>
     <main>
       <div class="intro">
@@ -249,8 +301,14 @@
       </div>
     </main>
     <footer>
-      <span>© 2026 Indian Pharmacological Society · West Bengal</span
-      ><a href="mailto:helpdesk@ipswb.com">Need help? Contact us</a>
+      <div>
+        <img src="assets/ips-logo.png" alt="Indian Pharmacological Society" />
+        <p>West Bengal State Branch</p>
+      </div>
+      <p>Advancing pharmacology. For the benefit of society.</p>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Indian Pharmacological Society · West Bengal</span>
+      </div>
     </footer>
     <a
       class="whatsapp-fab"

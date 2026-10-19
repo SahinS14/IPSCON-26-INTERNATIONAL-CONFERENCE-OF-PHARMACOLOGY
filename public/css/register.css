@@ -36,7 +36,7 @@ textarea:focus-visible {
   outline: 3px solid #2563eb;
   outline-offset: 3px;
 }
-header {
+.legacy-register-shell header {
   min-height: 90px;
   padding: 18px 6%;
   display: flex;
@@ -46,22 +46,22 @@ header {
   background: white;
   border-bottom: 1px solid #e4eaf3;
 }
-header img {
+.legacy-register-shell header img {
   display: block;
   width: 240px;
   height: auto;
 }
-nav {
+.legacy-register-shell nav {
   display: flex;
   gap: 28px;
   font-size: 13px;
   align-items: center;
 }
-nav a[aria-current] {
+.legacy-register-shell nav a[aria-current] {
   color: #1d58c4;
   font-weight: 600;
 }
-nav span {
+.legacy-register-shell nav span {
   margin-left: 8px;
 }
 .skip {
@@ -488,7 +488,7 @@ dd {
   font-size: 12px;
   color: var(--muted);
 }
-footer {
+.legacy-register-shell footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -505,7 +505,7 @@ footer {
   .submit-button:hover {
     background: #194cba;
   }
-  nav a:hover {
+  .legacy-register-shell nav a:hover {
     color: #2563eb;
   }
 }
@@ -530,15 +530,15 @@ footer {
   }
 }
 @media (max-width: 700px) {
-  header {
+  .legacy-register-shell header {
     padding: 18px 6%;
     flex-wrap: wrap;
     gap: 18px;
   }
-  header img {
+  .legacy-register-shell header img {
     width: 215px;
   }
-  nav {
+  .legacy-register-shell nav {
     gap: 24px;
     font-size: 12px;
   }
@@ -607,7 +607,7 @@ footer {
   .submit-button {
     width: 100%;
   }
-  footer {
+  .legacy-register-shell footer {
     flex-direction: column;
     gap: 8px;
   }
